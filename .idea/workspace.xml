@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc8a2e76-7c05-40ae-9638-e68a403379b6" name="Default" comment="" />
+    <list default="true" id="dc8a2e76-7c05-40ae-9638-e68a403379b6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +21,7 @@
     <SUITE FILE_PATH="coverage/Learn$001_base.coverage" NAME="001_base Coverage Results" MODIFIED="1529144228163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/003_list&amp;tuple" />
     <SUITE FILE_PATH="coverage/Learn$001__sorted.coverage" NAME="001_高阶函数_sorted Coverage Results" MODIFIED="1529203103544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/007_函数式编程" />
     <SUITE FILE_PATH="coverage/Learn$example_001.coverage" NAME="example_001 Coverage Results" MODIFIED="1529156252520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/006_high_feat" />
-    <SUITE FILE_PATH="coverage/Learn$005_.coverage" NAME="005_使用枚举类 Coverage Results" MODIFIED="1529209532751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/009_面向对象高级编程" />
+    <SUITE FILE_PATH="coverage/Learn$005_.coverage" NAME="005_文档测试 Coverage Results" MODIFIED="1529212585230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/010_错误、调试和测试" />
     <SUITE FILE_PATH="coverage/Learn$001_unicode.coverage" NAME="001_unicode Coverage Results" MODIFIED="1529143001276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/encode" />
     <SUITE FILE_PATH="coverage/Learn$002_Iteration.coverage" NAME="002_Iteration Coverage Results" MODIFIED="1529156036428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/006_high_feat" />
     <SUITE FILE_PATH="coverage/Learn$002_while_loop.coverage" NAME="002_while_loop Coverage Results" MODIFIED="1529146981531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/004_logic" />
@@ -48,16 +50,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="002_使用property限制适用范围.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/009_面向对象高级编程/002_使用property限制适用范围.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="003_多继承.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/009_面向对象高级编程/003_多继承.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -128,7 +120,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="练习_001.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="005_文档测试.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/010_错误、调试和测试/005_文档测试.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="练习_001.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/010_错误、调试和测试/练习_001.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="594">
@@ -157,10 +159,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hello/Hello_input.py" />
         <option value="$PROJECT_DIR$/encode/001_unicode.py" />
         <option value="$PROJECT_DIR$/encode/002_unicode_2_ascii.py" />
         <option value="$PROJECT_DIR$/hello/003_format_print.py" />
@@ -211,6 +215,7 @@
         <option value="$PROJECT_DIR$/010_错误、调试和测试/003_调试.py" />
         <option value="$PROJECT_DIR$/010_错误、调试和测试/004_单元测试.py" />
         <option value="$PROJECT_DIR$/010_错误、调试和测试/练习_001.py" />
+        <option value="$PROJECT_DIR$/010_错误、调试和测试/005_文档测试.py" />
       </list>
     </option>
   </component>
@@ -250,6 +255,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -273,11 +279,6 @@
             <path>
               <item name="Learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="Learn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learn" type="462c0819:PsiDirectoryNode" />
-              <item name="010_错误、调试和测试" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -317,26 +318,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in 练习_001.py">
-    <configuration name="001_错误处理" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/010_错误、调试和测试" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Learn" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/010_错误、调试和测试/001_错误处理.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.005_文档测试">
     <configuration name="002_自定义异常" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -370,6 +352,25 @@
       <module name="Learn" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/010_错误、调试和测试/003_调试.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="005_文档测试" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/010_错误、调试和测试" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Learn" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/010_错误、调试和测试/005_文档测试.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -468,19 +469,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.001_错误处理" />
-      <item index="1" class="java.lang.String" itemvalue="Python.002_自定义异常" />
-      <item index="2" class="java.lang.String" itemvalue="Python.003_调试" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in 004_单元测试.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in 练习_001.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python.002_自定义异常" />
+      <item index="1" class="java.lang.String" itemvalue="Python.003_调试" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in 004_单元测试.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in 练习_001.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python.005_文档测试" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in 练习_001.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in 004_单元测试.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python.003_调试" />
-        <item index="3" class="java.lang.String" itemvalue="Python.002_自定义异常" />
-        <item index="4" class="java.lang.String" itemvalue="Python.001_错误处理" />
+        <item index="0" class="java.lang.String" itemvalue="Python.005_文档测试" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in 练习_001.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in 004_单元测试.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python.003_调试" />
+        <item index="4" class="java.lang.String" itemvalue="Python.002_自定义异常" />
       </list>
     </recent_temporary>
   </component>
@@ -534,10 +535,10 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -576,13 +577,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/001_入门/002_simple_input.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/001_入门/002_simple_input.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -942,6 +936,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/010_错误、调试和测试/练习_001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/010_错误、调试和测试/004_单元测试.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -950,10 +952,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/010_错误、调试和测试/练习_001.py">
+    <entry file="file://$PROJECT_DIR$/010_错误、调试和测试/005_文档测试.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="377">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding />
         </state>
       </provider>
