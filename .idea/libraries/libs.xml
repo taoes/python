@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../JavaWeb/SpringMVC/web/WEB-INF/libs" />
+    </CLASSES>
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../JavaWeb/SpringMVC/web/WEB-INF/libs" recursive="false" />
+  </library>
+</component>
