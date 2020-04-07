@@ -26,20 +26,20 @@ if __name__ == '__main__':
             "actionCard": {
                 "title": "正在构建" + log,
                 "text":
-                    "![screenshot](http://dbaplus.cn/uploadfile/2016/1129/20161129120445501.gif)"
-                    "\n# 发现新的提交内容,开始构建镜像  \n"
+                    "![screenshot](http://pic.zhoutao123.com/picture/build.jpeg)"
+                    "\n<font  style='font-weight:900;font-size:18px'> 正在开始构建镜像 </font>  \n"
                     "---\n"
-                    "+ CommitID: %s \n"
-                    "+ 提交日志: %s \n"
-                    "+ 提交时间: %s \n"
+                    "+ CommitID: <font  style='font-weight:bold'> %s </font> \n"
+                    "+ 提交日志: <font  style='font-weight:bold'> %s </font>\n"
+                    "+ 构建时间: <font  style='font-weight:bold'> %s </font>\n"
                     % (
                         log[0:9],
                         log[9:],
                         time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())),
                 "hideAvatar": "0",
                 "btnOrientation": "0",
-                "singleTitle": "查看详情",
-                "singleURL": "http://mrpdba.natappfree.cc/job/ufc-be%20%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E9%80%9A%E7%9F%A5/"
+                "singleTitle": "查看详情(内网)",
+                "singleURL": "http://172.16.5.71:8080/job/ufc-be%20%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E9%80%9A%E7%9F%A5/"
             }
         }
         send_message(json.dumps(msg))

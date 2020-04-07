@@ -5,6 +5,7 @@ import time
 
 
 def send_message(message):
+    # access_token = 'e82a44f2e415a9dbd4fe4259beece66537c5ed40122c11812ad9e26712e17554'
     access_token = 'b0a08aee65ea0fd3a5caee0cef64093f96a719e2a57246c4bb84a3c57d8e59a1'
     url = 'https://oapi.dingtalk.com/robot/send?access_token=%s' % access_token
     headers = {"Content-Type": "application/json;"}
@@ -25,15 +26,16 @@ if __name__ == '__main__':
         msg = {
             "msgtype": "actionCard",
             "actionCard": {
-                "title": "构建完成" + log,
+                "title": "构建完成",
                 "text":
-                    "![screenshot](https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3391292376,2761224021&fm=26&gp=0.jpg)"
-                    "\n # Docker构建完成并开始部署  \n"
+                    "![screenshot](http://pic.zhoutao123.com/picture/k8s.jpg)"
+                    "\n <font  style='font-weight:900;font-size:18px'> Docker构建完成, 开始部署</font>  \n"
                     "---\n"
-                    "+ CommitID: %s \n"
-                    "+ 提交内容: %s \n"
-                    "+ 自动部署：%s \n"
-                    "+ 完成时间: %s \n"
+                    "+ CommitID: <font  style='font-weight:bold'> %s </font>  \n"
+                    "+ 提交内容: <font  style='font-weight:bold'> %s </font> \n"
+                    "+ 自动部署：<font  style='font-weight:bold'> %s </font>\n"
+                    "+ 构建完成: <font  style='font-weight:bold'> %s </font>\n"
+                    "+ 测试环境将会自动部署，预计 <font color=#FF0000 style='font-weight:900'>4分钟</font> 内启动完成 \n"
                     % (
                         log[0:9],
                         log[9:],
@@ -41,8 +43,8 @@ if __name__ == '__main__':
                         time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())),
                 "hideAvatar": "0",
                 "btnOrientation": "0",
-                "singleTitle": "查看构建详情信息",
-                "singleURL": "http://mrpdba.natappfree.cc/job/ufc-be%20%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E9%80%9A%E7%9F%A5/"
+                "singleTitle": "查看详情(内网)",
+                "singleURL": "http://172.16.5.71:8080/job/ufc-be%20%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E9%80%9A%E7%9F%A5/"
             }
         }
         send_message(json.dumps(msg))
