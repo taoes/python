@@ -19,9 +19,21 @@ def send_message(message):
     return response_msg
 
 
+def get_dev_label():
+    (k_status, k_log) = subprocess.getstatusoutput("echo `kubectl get pod`")
+    if k_status == 0:
+        data = k_log.split()[5:]
+        for index in range(0, len(data)):
+            label = data[index]
+            if index % 5 == 0 and "ufc-be-dev" in label and "mysql" not in label and "rabbit" not in label:
+                return label
+    return "未知 PodName"
+
+
 if __name__ == '__main__':
-    (status, log) = subprocess.getstatusoutput("echo `git log --oneline |awk 'NR==1'`")
+    (status, log) = subprocess.getstatusoutput("echo `git log --pretty=format:\"%h@@@%s@@@%cn\" | awk NR==1`")
     if status == 0:
+        log_arrary = log.split('@@@')
         deploy = "是" if ("部署" in log) else "否",
         msg = {
             "msgtype": "actionCard",
@@ -33,13 +45,15 @@ if __name__ == '__main__':
                     "---\n"
                     "+ CommitID: <font  style='font-weight:bold'> %s </font>  \n"
                     "+ 提交内容: <font  style='font-weight:bold'> %s </font> \n"
-                    "+ 自动部署：<font  style='font-weight:bold'> %s </font>\n"
+                    "+ 提交作者：<font  style='font-weight:bold'> %s </font>\n"
+                    "+ 删除Pod：<font  style='font-weight:bold'> %s </font>\n"
                     "+ 构建完成: <font  style='font-weight:bold'> %s </font>\n"
                     "+ 测试环境将会自动部署，预计 <font color=#FF0000 style='font-weight:900'>4分钟</font> 内启动完成 \n"
                     % (
-                        log[0:9],
-                        log[9:],
-                        "是",
+                        log_arrary[0],
+                        log_arrary[1],
+                        log_arrary[2],
+                        get_dev_label(),
                         time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())),
                 "hideAvatar": "0",
                 "btnOrientation": "0",

@@ -2,6 +2,7 @@ import subprocess
 import requests
 import json
 import time
+import os
 
 
 def send_message(message):
@@ -19,23 +20,30 @@ def send_message(message):
 
 
 if __name__ == '__main__':
-    (status, log) = subprocess.getstatusoutput("echo `git log --oneline |awk 'NR==1'`")
+    (status, log) = subprocess.getstatusoutput("echo `git log --pretty=format:\"%h@@@%s@@@%cn\" | awk NR==1`")
+    log_arrary = log.split('@@@')
+    build = "no_deploy" not in log_arrary[1]
     if status == 0:
         msg = {
             "msgtype": "actionCard",
             "actionCard": {
-                "title": "正在构建" + log,
+                "title": log[1],
                 "text":
                     "![screenshot](http://pic.zhoutao123.com/picture/build.jpeg)"
                     "\n<font  style='font-weight:900;font-size:18px'> 正在开始构建镜像 </font>  \n"
                     "---\n"
                     "+ CommitID: <font  style='font-weight:bold'> %s </font> \n"
                     "+ 提交日志: <font  style='font-weight:bold'> %s </font>\n"
+                    "+ 提交作者: <font  style='font-weight:bold'> %s </font>\n"
                     "+ 构建时间: <font  style='font-weight:bold'> %s </font>\n"
+                    "+ 是否构建: <font  color=#FF000 style='font-weight:bold'> %s </font>\n"
                     % (
-                        log[0:9],
-                        log[9:],
-                        time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())),
+                        log_arrary[0],
+                        log_arrary[1],
+                        log_arrary[2],
+                        time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
+                        build
+                    ),
                 "hideAvatar": "0",
                 "btnOrientation": "0",
                 "singleTitle": "查看详情(内网)",
@@ -43,3 +51,9 @@ if __name__ == '__main__':
             }
         }
         send_message(json.dumps(msg))
+
+    # 提交日志中包含 no_deploy 则不会部署
+    if "no_deploy" in log_arrary[1]:
+        os._exit(1)
+    else:
+        os._exit(0)
